@@ -1,0 +1,19 @@
+_format_version: "2.1"
+_transform: true
+
+services:
+- host: mockbin.org
+  name: example_service
+  port: 80
+  protocol: http
+  plugins: 
+  - name: oidc
+    config: 
+      discovery: https://accounts.google.com/.well-known/openid-configuration
+      client_id: ${CLIENT_ID}
+      client_secret: ${CLIENT_SECRET}
+  routes:
+  - name: example_route
+    paths:
+    - /mock
+    strip_path: true
