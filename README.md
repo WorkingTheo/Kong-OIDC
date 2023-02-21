@@ -1,5 +1,5 @@
 # Kong-OIDC
-A containerised Kong gateway instance configured with [OIDC plugin](https://github.com/nokia/kong-oidc) and using declarative configuration
+A containerised Kong gateway instance configured with [OIDC plugin](https://github.com/nokia/kong-oidc) and using [declarative configuration in DB-less mode](https://docs.konghq.com/gateway/latest/production/deployment-topologies/db-less-and-declarative-config/).
 
 ## Prerequisites 
  - Docker 
