@@ -14,6 +14,6 @@ services:
       KONG_ADMIN_LISTEN: "0.0.0.0:8001"
       KONG_DECLARATIVE_CONFIG: "/opt/kong/kong.yml"
     ports:
-      - "127.0.0.1:8000:8000/tcp"
-      - "127.0.0.1:8001:8001/tcp"
-      - "127.0.0.1:8444:8444/tcp"
+      - "8000:8000"
+      - "8001:8001"
+      - "8444:8444"
